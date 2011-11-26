@@ -26,12 +26,8 @@ a:hover, a:active { text-decoration: underline; }
 #subtitle { margin-top: 0px; }
 
 #container {
-  /* width =
-       max(img.width) + 
-       #container.padding.width * 2 +
-       #container.p.padding.width * 2
-  */
-  width: 1003px; 
+  min-width: 550px;
+  max-width: 1200px;
   padding: 50px;
   margin: 0px auto;
 }
@@ -53,6 +49,8 @@ a:hover, a:active { text-decoration: underline; }
 #content img {
   display: block;
   margin: 0px auto;
+  max-width: 100%;
+  height: auto;
 }
 
 #description p {
@@ -110,4 +108,15 @@ a.download:hover {
   color: #555;
   font-size: 75%;
   text-align: center;
+}
+
+@media screen and (max-device-width: 480px){
+  body { -webkit-text-size-adjust: 100%; }
+  h1 { font-size: 200%; }
+  #description p { padding: 0px; }
+  #description h2 { margin-bottom: 0.8em; }
+  #container { padding: 0px; min-width: 0px; }
+  #content { padding: 10px; }
+  a.fork { display: none; }
+  a.download { display: block; margin: 1em 2em; }
 }

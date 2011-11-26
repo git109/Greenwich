@@ -17,7 +17,7 @@ a:link, a:visited { text-decoration: none; }
 a:hover, a:active { text-decoration: underline; }
 
 #title, #subtitle, h2 {
-  font-family: 'Bank Gothic', Impact;
+  font-family: 'Bank Gothic', Copperplate, Impact;
   text-align: center;
   color: #66004a;
 }

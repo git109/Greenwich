@@ -9,7 +9,7 @@ body {
 }
 
 h1 { font-size: 400%; }
-h2 { font-size: 100%; }
+h2 { font-size: 150%; }
 a { color: #c0002f; outline-style: none; }
 a:hover { color: #555; }
 
@@ -17,13 +17,15 @@ a:link, a:visited { text-decoration: none; }
 a:hover, a:active { text-decoration: underline; }
 
 #title, #subtitle, h2 {
-  font-family: 'Bank Gothic', Copperplate, Impact;
+  font-family: 'Chalkduster', 'Courier';
+  font-variant: small-caps;
+  text-transform: lowercase;
   text-align: center;
   color: #66004a;
 }
 
 #title { margin-bottom: 0.3em; }
-#subtitle { margin-top: 0px; }
+#subtitle { margin-top: 0px; font-size: 130%; }
 
 #container {
   min-width: 550px;
